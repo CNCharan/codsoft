@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satyamev Jayate</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <style>
+        /* General Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            line-height: 1.6;
+            color: #333;
+            background: #f4f4f4;
+        }
+        
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #005f73;
+            color: white;
+            padding: 15px 20px;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+        }
+        .navbar ul li {
+            margin: 0 15px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .navbar a:hover {
+            color: #f4a261;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: #028090;
+            color: white;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 50px;
+        }
+        .hero p {
+            font-size: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 25px;
+            background: #00a896;
+            color: white;
+            text-decoration: none;
+            margin-top: 15px;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background: #05668d;
+        }
+        
+        /* Services Section */
+        .services {
+            padding: 60px 20px;
+            background: white;
+            text-align: center;
+        }
+        .service-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .service-box {
+            background: #eef;
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 15px;
+            border-radius: 10px;
+            width: 30%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+        .service-box:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* About Section */
+        .about {
+            padding: 50px 20px;
+            background: #f1f1f1;
+            text-align: center;
+        }
+        
+        /* Contact Section */
+        .contact {
+            background: #264653;
+            color: white;
+            padding: 50px 20px;
+        }
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: none;
+        }
+        .contact button {
+            background: #2a9d8f;
+            color: white;
+            padding: 10px 25px;
+            border: none;
+            cursor: pointer;
+        }
+        .contact button:hover {
+            background: #1f6f5f;
+        }
+        
+        /* Footer */
+        footer {
+            background: #023047;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Satyamev Jayate</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Justice Through Technology</h1>
+            <p>Connecting verified lawyers with clients for fair and transparent legal services.</p>
+            <a href="#services" class="btn">Explore Services</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Satyamev Jayate</h2>
+        <p>We provide a platform for clients to connect with verified lawyers, ensuring secure and fair legal representation.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-container">
+            <div class="service-box">
+                <h3>Case Submission</h3>
+                <p>Submit your case securely and get verified legal representation.</p>
+            </div>
+            <div class="service-box">
+                <h3>Lawyer Directory</h3>
+                <p>Connect with skilled lawyers specializing in various legal fields.</p>
+            </div>
+            <div class="service-box">
+                <h3>Secure Payment</h3>
+                <p>Transparent and secure payment gateway for all transactions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Satyamev Jayate. All rights reserved.</p>
+    </footer>
+</body>
+</html>
